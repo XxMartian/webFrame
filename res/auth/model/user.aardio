@@ -1,0 +1,28 @@
+namespace Model.auth{
+    class user{
+    	ctor(){
+    		this=..Model.Conn
+    		this.tablename="user"
+    	};
+    	/* SQL{{ */
+    	SQL_LOGIN=`SELECT * FROM `++this.tablename++` WHERE name=@name and password=@password`;
+    	/*}}*/
+    	Field={
+    		Id={Lable="编号";Attr="INT PRIMARY KEY AUTO_INCREMENT"};
+    		Name={Label="用户名";Attr="VARCHAR(255)"};
+    		Password={label="密码";Attr="VARCHAR(255)"};
+    		Nickname={Label="昵称";}
+    	}
+    	CheckLogin=function(name,password){
+    		var ret=this.query(this.SQL_LOGIN,{name=name;password=password})
+    		var v={}
+    		for Id,Name,Password,Nickname in ret.each(){
+    			..table.push(v,{Id=Id;Name=Name;Password=Password;Nickname=Nickname})
+    		}
+    		if(#v) return v[1]
+    		else return null
+    	}
+    }
+    namespace user{
+    }
+}

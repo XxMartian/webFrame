@@ -1,0 +1,6 @@
+import console; 
+import table
+import Common
+var a={1;2;31;"XYZ7777"}
+..console.log(Common.unpack(a))
+console.pause(true);

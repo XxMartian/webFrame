@@ -1,0 +1,82 @@
+﻿import mysql.client
+import config
+import console
+import table
+class Model{
+	ctor(name){
+		if(!self.Conn){
+			self.Conn=self.connect()
+		}
+		if(self.Conn.ping()){	
+			self.Conn=self.connect()
+		}
+		this=self.Mod(name)
+		this.name=name
+		var SQL_CREATE_TABLE=function(){
+			var sql=`create table `++this.tablename++` (`
+			for(k,v in this.Field){
+				var str=(
+					(k)++
+					(v["Attr"]?(" "++v["Attr"]):" varchar(255)")++
+					(v["Label"]?(" comment '"++v["Label"])++"'":"")++
+					","
+				)	
+				sql+=str
+			}
+			sql=..string.trimright(sql,',')
+			sql+=") comment='"++this.name++"';"
+			return this.exec(sql)
+		}
+		SQL_CREATE_TABLE()
+	}
+	/*
+	    	Field={
+    		Id={Label="编号";Attr=""};
+    		Name={Label="名称"}
+    	}
+    */
+	
+}
+namespace Model{
+    connect=function(){
+			Conn,err = ..mysql.client(
+				server = ..config.db.server:"localhost"; //数据库服务器,可省略默认为localhost
+				uid = ..config.db.user:"root";//用户名,可省略默认为root
+				pwd = ..config.db.password:"123456";
+			);
+			if(err){
+				error(err)
+			}
+			Conn.selectDb(..config.db.dbname)
+			return Conn
+	}
+	//Conn=connect()
+ 	Mod=function(mod){
+        	var tab={}
+        	var path=""
+        	var M
+			if(mod){
+				var par="!\w([a-zA-Z]\w*)"
+				for word in ..string.gmatch(mod,par) { 
+    				..table.push(tab,word)
+				}
+			}
+			if(#tab>0){
+				path="/res/"++tab[1]++"/model"
+				for(i=2;#tab;1){
+					path+=("/"+tab[i])
+				}
+				path+=".aardio"
+			}
+			try{
+				if(!..Router["mod"++..string.md5(mod)]){
+					loadcodex(path)
+					..Router["mod"++..string.md5(mod)]=true//控制器缓存
+				}
+				M=eval("Model."++mod++"()")
+			}catch(e){
+				..response.write(e)
+			}
+			return M
+       	}
+}

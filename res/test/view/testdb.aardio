@@ -1,0 +1,8 @@
+<? a=...?>
+<ul>
+<? for v in a {?>
+	<li>
+	<a href="http://baidu.com"><? =a[v]?></a>
+	</li>
+<?}?> 
+</ul>

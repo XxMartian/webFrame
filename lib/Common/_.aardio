@@ -1,0 +1,31 @@
+﻿import string
+namespace Common
+unpack=function(tab,s=",",key="Id"){
+	var t=""
+	for(i=1;#tab;1){
+		t+=tab[i][key]++s
+	}
+	return ..string.trimright(t,s)
+}
+getTable = function(result){//执行SQL,返回table记录集
+		if(!result)	return;
+		var fields = {};
+		var tabFieldType = {};
+		var f = result.fetchFieldTypes();
+		for(i=1;result.numFields();1){
+			fields[i] = f[i].name
+			..table.push(tabFieldType,f[i]);
+		}
+		t = {};
+		var row = result.fetchObject();
+		while (row) {
+			for(i,field in tabFieldType){
+				if(field.field_type == 246 /*MYSQL_TYPE_DECIMAL*/)
+					row[field.name] = tonumber(row[field.name]);
+			}
+			..table.push(t, row);
+			row = result.fetchObject();
+		}
+		if( type(t) != type.table ) t = null;
+		return t,err;
+	}

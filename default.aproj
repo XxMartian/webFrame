@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project ver="10" name="webFrame" libEmbed="true" icon="..." ui="console" output="webFrame.exe" CompanyName="aardio.org" FileDescription="webFrame" LegalCopyright="Copyright (C) aardio.org 2019" ProductName="webFrame" InternalName="webFrame" FileVersion="0.0.0.23" ProductVersion="0.0.0.23" publishDir="/Publish/" dstrip="false">
+	<file name="main" path="main.aardio" comment="启动程序代码"/>
+	<folder name="资源文件" path="res" embed="true">
+		<file name="error.aardio" path="res\error.aardio" comment="res\error.aardio"/>
+		<folder name="loader" path="res\loader" comment="res\loader" embed="false">
+			<file name="init.aardio" path="res\loader\init.aardio" comment="res\loader\init.aardio"/>
+			<file name="init_mvc.aardio" path="res\loader\init_mvc.aardio" comment="res\loader\init_model.aardio"/>
+		</folder>
+		<folder name="test" path="res\test" comment="res\test" embed="false">
+			<folder name="controller" path="res\test\controller" comment="res\test\controller" embed="false">
+				<file name="test.aardio" path="res\test\controller\test.aardio" comment="res\test\controller\test.aardio"/>
+			</folder>
+			<folder name="view" path="res\test\view" comment="res\test\view" embed="false">
+				<file name="index.aardio" path="res\test\view\index.aardio" comment="res\test\view\index.aardio"/>
+				<file name="test.aardio" path="res\test\view\test.aardio" comment="res\test\view\test.aardio"/>
+				<file name="testdb.aardio" path="res\test\view\testdb.aardio" comment="res\test\view\testdb.aardio"/>
+			</folder>
+			<folder name="model" path="res\test\model" embed="true" comment="目录">
+				<file name="testmod.aardio" path="res\test\model\testmod.aardio" comment="res\test\model\test.aardio"/>
+			</folder>
+		</folder>
+		<folder name="web" path="res\web" comment="res\web" embed="false">
+			<folder name="controller" path="res\web\controller" comment="res\web\controller" embed="false">
+				<file name="home.aardio" path="res\web\controller\home.aardio" comment="res\web\controller\home.aardio"/>
+				<file name="login.aardio" path="res\web\controller\login.aardio" comment="res\web\controller\login.aardio"/>
+			</folder>
+			<folder name="view" path="res\web\view" comment="res\web\view" embed="false">
+				<folder name="home" path="res\web\view\home" comment="res\web\view\home" embed="false">
+					<file name="index.aardio" path="res\web\view\home\index.aardio" comment="res\web\view\home\index.aardio"/>
+				</folder>
+				<folder name="common" path="res\web\view\common" embed="true" comment="目录">
+					<file name="header.aardio" path="res\web\view\common\header.aardio" comment="res\web\view\common\header.aardio"/>
+					<file name="footer.aardio" path="res\web\view\common\footer.aardio" comment="res\web\view\common\footer.aardio"/>
+					<file name="left.aardio" path="res\web\view\common\left.aardio" comment="res\web\view\common\left.aardio"/>
+					<file name="content.aardio" path="res\web\view\common\content.aardio" comment="res\web\view\common\right.aardio"/>
+				</folder>
+				<folder name="login" path="res\web\view\login" embed="true" comment="目录">
+					<file name="index.aardio" path="res\web\view\login\index.aardio" comment="res\web\view\login\login.aardio"/>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="auth" path="res\auth" embed="true" comment="目录">
+			<folder name="model" path="res\auth\model" embed="true" comment="目录">
+				<file name="user.aardio" path="res\auth\model\user.aardio" comment="res\auth\model\user.aardio"/>
+				<file name="role.aardio" path="res\auth\model\role.aardio" comment="res\auth\model\role.aardio"/>
+				<file name="userRole.aardio" path="res\auth\model\userRole.aardio" comment="res\auth\model\userRole.aardio"/>
+				<file name="permission.aardio" path="res\auth\model\permission.aardio" comment="res\auth\model\permission.aardio"/>
+				<file name="rolePermission.aardio" path="res\auth\model\rolePermission.aardio" comment="res\auth\model\rolePermission.aardio"/>
+			</folder>
+		</folder>
+		<folder name="s" path="res\s" embed="true" comment="目录">
+			<file name="test1.aardio" path="res\s\test1.aardio" comment="res\s\test1.aardio"/>
+		</folder>
+	</folder>
+	<folder name="网页资源文件" path="webres" embed="true" comment="目录">
+		<file name="1.txt" path="webres\1.txt" comment="webres\1.txt"/>
+		<folder name="Content" path="webres\Content" comment="webres\Content" embed="false">
+			<file name="jquery-1.9.1.min.js" path="webres\Content\jquery-1.9.1.min.js" comment="webres\Content\jquery-1.9.1.min.js"/>
+			<file name="jquery-1.9.1.min.map" path="webres\Content\jquery-1.9.1.min.map" comment="webres\Content\jquery-1.9.1.min.map"/>
+			<folder name="ace" path="webres\Content\ace" comment="webres\Content\ace">
+				<folder name="avatars" path="webres\Content\ace\avatars" comment="webres\Content\ace\avatars">
+					<file name="avatar.png" path="webres\Content\ace\avatars\avatar.png" comment="webres\Content\ace\avatars\avatar.png"/>
+					<file name="avatar1.png" path="webres\Content\ace\avatars\avatar1.png" comment="webres\Content\ace\avatars\avatar1.png"/>
+					<file name="avatar2.png" path="webres\Content\ace\avatars\avatar2.png" comment="webres\Content\ace\avatars\avatar2.png"/>
+					<file name="avatar3.png" path="webres\Content\ace\avatars\avatar3.png" comment="webres\Content\ace\avatars\avatar3.png"/>
+					<file name="avatar4.png" path="webres\Content\ace\avatars\avatar4.png" comment="webres\Content\ace\avatars\avatar4.png"/>
+					<file name="avatar5.png" path="webres\Content\ace\avatars\avatar5.png" comment="webres\Content\ace\avatars\avatar5.png"/>
+					<file name="profile-pic.jpg" path="webres\Content\ace\avatars\profile-pic.jpg" comment="webres\Content\ace\avatars\profile-pic.jpg"/>
+					<file name="user.jpg" path="webres\Content\ace\avatars\user.jpg" comment="webres\Content\ace\avatars\user.jpg"/>
+				</folder>
+				<folder name="css" path="webres\Content\ace\css" comment="webres\Content\ace\css">
+					<file name="ace-ie.min.css" path="webres\Content\ace\css\ace-ie.min.css" comment="webres\Content\ace\css\ace-ie.min.css"/>
+					<file name="ace-rtl.min.css" path="webres\Content\ace\css\ace-rtl.min.css" comment="webres\Content\ace\css\ace-rtl.min.css"/>
+					<file name="ace-skins.min.css" path="webres\Content\ace\css\ace-skins.min.css" comment="webres\Content\ace\css\ace-skins.min.css"/>
+					<file name="ace.min.css" path="webres\Content\ace\css\ace.min.css" comment="webres\Content\ace\css\ace.min.css"/>
+					<file name="font-awesome-ie7.min.css" path="webres\Content\ace\css\font-awesome-ie7.min.css" comment="webres\Content\ace\css\font-awesome-ie7.min.css"/>
+					<file name="font-awesome.min.css" path="webres\Content\ace\css\font-awesome.min.css" comment="webres\Content\ace\css\font-awesome.min.css"/>
+					<folder name="images" path="webres\Content\ace\css\images" comment="webres\Content\ace\css\images">
+						<file name="loading.gif" path="webres\Content\ace\css\images\loading.gif" comment="webres\Content\ace\css\images\loading.gif"/>
+						<file name="Thumbs.db" path="webres\Content\ace\css\images\Thumbs.db" comment="webres\Content\ace\css\images\Thumbs.db"/>
+					</folder>
+				</folder>
+				<folder name="js" path="webres\Content\ace\js" comment="webres\Content\ace\js">
+					<file name="ace-elements.min.js" path="webres\Content\ace\js\ace-elements.min.js" comment="webres\Content\ace\js\ace-elements.min.js"/>
+					<file name="ace-extra.min.js" path="webres\Content\ace\js\ace-extra.min.js" comment="webres\Content\ace\js\ace-extra.min.js"/>
+					<file name="ace.min.js" path="webres\Content\ace\js\ace.min.js" comment="webres\Content\ace\js\ace.min.js"/>
+				</folder>
+			</folder>
+			<folder name="bootstrap" path="webres\Content\bootstrap" comment="webres\Content\bootstrap">
+				<folder name="css" path="webres\Content\bootstrap\css" comment="webres\Content\bootstrap\css">
+					<file name="bootstrap-tab.css" path="webres\Content\bootstrap\css\bootstrap-tab.css" comment="webres\Content\bootstrap\css\bootstrap-tab.css"/>
+					<file name="bootstrap-theme.css.map" path="webres\Content\bootstrap\css\bootstrap-theme.css.map" comment="webres\Content\bootstrap\css\bootstrap-theme.css.map"/>
+					<file name="bootstrap-theme.min.css" path="webres\Content\bootstrap\css\bootstrap-theme.min.css" comment="webres\Content\bootstrap\css\bootstrap-theme.min.css"/>
+					<file name="bootstrap.css.map" path="webres\Content\bootstrap\css\bootstrap.css.map" comment="webres\Content\bootstrap\css\bootstrap.css.map"/>
+					<file name="bootstrap.min.css" path="webres\Content\bootstrap\css\bootstrap.min.css" comment="webres\Content\bootstrap\css\bootstrap.min.css"/>
+				</folder>
+				<folder name="fonts" path="webres\Content\bootstrap\fonts" comment="webres\Content\bootstrap\fonts">
+					<file name="glyphicons-halflings-regular.eot" path="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.eot" comment="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.eot"/>
+					<file name="glyphicons-halflings-regular.svg" path="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.svg" comment="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.svg"/>
+					<file name="glyphicons-halflings-regular.ttf" path="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" comment="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.ttf"/>
+					<file name="glyphicons-halflings-regular.woff" path="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.woff" comment="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.woff"/>
+					<file name="glyphicons-halflings-regular.woff2" path="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.woff2" comment="webres\Content\bootstrap\fonts\glyphicons-halflings-regular.woff2"/>
+				</folder>
+				<folder name="js" path="webres\Content\bootstrap\js" comment="webres\Content\bootstrap\js">
+					<file name="bootstrap-tab.js" path="webres\Content\bootstrap\js\bootstrap-tab.js" comment="webres\Content\bootstrap\js\bootstrap-tab.js"/>
+					<file name="bootstrap.min.js" path="webres\Content\bootstrap\js\bootstrap.min.js" comment="webres\Content\bootstrap\js\bootstrap.min.js"/>
+					<file name="npm.js" path="webres\Content\bootstrap\js\npm.js" comment="webres\Content\bootstrap\js\npm.js"/>
+				</folder>
+			</folder>
+			<folder name="bootstrap-table" path="webres\Content\bootstrap-table" comment="webres\Content\bootstrap-table">
+				<file name="bootstrap-table-locale-all.js" path="webres\Content\bootstrap-table\bootstrap-table-locale-all.js" comment="webres\Content\bootstrap-table\bootstrap-table-locale-all.js"/>
+				<file name="bootstrap-table-locale-all.min.js" path="webres\Content\bootstrap-table\bootstrap-table-locale-all.min.js" comment="webres\Content\bootstrap-table\bootstrap-table-locale-all.min.js"/>
+				<file name="bootstrap-table-treeview.js" path="webres\Content\bootstrap-table\bootstrap-table-treeview.js" comment="webres\Content\bootstrap-table\bootstrap-table-treeview.js"/>
+				<file name="bootstrap-table.css" path="webres\Content\bootstrap-table\bootstrap-table.css" comment="webres\Content\bootstrap-table\bootstrap-table.css"/>
+				<file name="bootstrap-table.js" path="webres\Content\bootstrap-table\bootstrap-table.js" comment="webres\Content\bootstrap-table\bootstrap-table.js"/>
+				<file name="bootstrap-table.min.css" path="webres\Content\bootstrap-table\bootstrap-table.min.css" comment="webres\Content\bootstrap-table\bootstrap-table.min.css"/>
+				<file name="bootstrap-table.min.js" path="webres\Content\bootstrap-table\bootstrap-table.min.js" comment="webres\Content\bootstrap-table\bootstrap-table.min.js"/>
+				<folder name="extensions" path="webres\Content\bootstrap-table\extensions" comment="webres\Content\bootstrap-table\extensions">
+					<folder name="accent-neutralise" path="webres\Content\bootstrap-table\extensions\accent-neutralise" comment="webres\Content\bootstrap-table\extensions\accent-neutralise">
+						<file name="bootstrap-table-accent-neutralise.js" path="webres\Content\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.js" comment="webres\Content\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.js"/>
+						<file name="bootstrap-table-accent-neutralise.min.js" path="webres\Content\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.min.js" comment="webres\Content\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.min.js"/>
+					</folder>
+					<folder name="angular" path="webres\Content\bootstrap-table\extensions\angular" comment="webres\Content\bootstrap-table\extensions\angular">
+						<file name="bootstrap-table-angular.js" path="webres\Content\bootstrap-table\extensions\angular\bootstrap-table-angular.js" comment="webres\Content\bootstrap-table\extensions\angular\bootstrap-table-angular.js"/>
+						<file name="bootstrap-table-angular.min.js" path="webres\Content\bootstrap-table\extensions\angular\bootstrap-table-angular.min.js" comment="webres\Content\bootstrap-table\extensions\angular\bootstrap-table-angular.min.js"/>
+					</folder>
+					<folder name="cookie" path="webres\Content\bootstrap-table\extensions\cookie" comment="webres\Content\bootstrap-table\extensions\cookie">
+						<file name="bootstrap-table-cookie.js" path="webres\Content\bootstrap-table\extensions\cookie\bootstrap-table-cookie.js" comment="webres\Content\bootstrap-table\extensions\cookie\bootstrap-table-cookie.js"/>
+						<file name="bootstrap-table-cookie.min.js" path="webres\Content\bootstrap-table\extensions\cookie\bootstrap-table-cookie.min.js" comment="webres\Content\bootstrap-table\extensions\cookie\bootstrap-table-cookie.min.js"/>
+					</folder>
+					<folder name="editable" path="webres\Content\bootstrap-table\extensions\editable" comment="webres\Content\bootstrap-table\extensions\editable">
+						<file name="bootstrap-table-editable.js" path="webres\Content\bootstrap-table\extensions\editable\bootstrap-table-editable.js" comment="webres\Content\bootstrap-table\extensions\editable\bootstrap-table-editable.js"/>
+						<file name="bootstrap-table-editable.min.js" path="webres\Content\bootstrap-table\extensions\editable\bootstrap-table-editable.min.js" comment="webres\Content\bootstrap-table\extensions\editable\bootstrap-table-editable.min.js"/>
+					</folder>
+					<folder name="export" path="webres\Content\bootstrap-table\extensions\export" comment="webres\Content\bootstrap-table\extensions\export">
+						<file name="bootstrap-table-export.js" path="webres\Content\bootstrap-table\extensions\export\bootstrap-table-export.js" comment="webres\Content\bootstrap-table\extensions\export\bootstrap-table-export.js"/>
+						<file name="bootstrap-table-export.min.js" path="webres\Content\bootstrap-table\extensions\export\bootstrap-table-export.min.js" comment="webres\Content\bootstrap-table\extensions\export\bootstrap-table-export.min.js"/>
+						<file name="tableExport.js" path="webres\Content\bootstrap-table\extensions\export\tableExport.js" comment="webres\Content\bootstrap-table\extensions\export\tableExport.js"/>
+					</folder>
+					<folder name="filter" path="webres\Content\bootstrap-table\extensions\filter" comment="webres\Content\bootstrap-table\extensions\filter">
+						<file name="bootstrap-table-filter.js" path="webres\Content\bootstrap-table\extensions\filter\bootstrap-table-filter.js" comment="webres\Content\bootstrap-table\extensions\filter\bootstrap-table-filter.js"/>
+						<file name="bootstrap-table-filter.min.js" path="webres\Content\bootstrap-table\extensions\filter\bootstrap-table-filter.min.js" comment="webres\Content\bootstrap-table\extensions\filter\bootstrap-table-filter.min.js"/>
+					</folder>
+					<folder name="filter-control" path="webres\Content\bootstrap-table\extensions\filter-control" comment="webres\Content\bootstrap-table\extensions\filter-control">
+						<file name="bootstrap-table-filter-control.js" path="webres\Content\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.js" comment="webres\Content\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.js"/>
+						<file name="bootstrap-table-filter-control.min.js" path="webres\Content\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.min.js" comment="webres\Content\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.min.js"/>
+					</folder>
+					<folder name="fixed-column" path="webres\Content\bootstrap-table\extensions\fixed-column" comment="webres\Content\bootstrap-table\extensions\fixed-column">
+						<file name="bootstrap-table-fixed-columns.css" path="webres\Content\bootstrap-table\extensions\fixed-column\bootstrap-table-fixed-columns.css" comment="webres\Content\bootstrap-table\extensions\fixed-column\bootstrap-table-fixed-columns.css"/>
+						<file name="bootstrap-table-fixed-columns.js" path="webres\Content\bootstrap-table\extensions\fixed-column\bootstrap-table-fixed-columns.js" comment="webres\Content\bootstrap-table\extensions\fixed-column\bootstrap-table-fixed-columns.js"/>
+					</folder>
+					<folder name="flat-json" path="webres\Content\bootstrap-table\extensions\flat-json" comment="webres\Content\bootstrap-table\extensions\flat-json">
+						<file name="bootstrap-table-flat-json.js" path="webres\Content\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.js" comment="webres\Content\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.js"/>
+						<file name="bootstrap-table-flat-json.min.js" path="webres\Content\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.min.js" comment="webres\Content\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.min.js"/>
+					</folder>
+					<folder name="group-by" path="webres\Content\bootstrap-table\extensions\group-by" comment="webres\Content\bootstrap-table\extensions\group-by">
+						<file name="bootstrap-table-group-by.css" path="webres\Content\bootstrap-table\extensions\group-by\bootstrap-table-group-by.css" comment="webres\Content\bootstrap-table\extensions\group-by\bootstrap-table-group-by.css"/>
+						<file name="bootstrap-table-group-by.js" path="webres\Content\bootstrap-table\extensions\group-by\bootstrap-table-group-by.js" comment="webres\Content\bootstrap-table\extensions\group-by\bootstrap-table-group-by.js"/>
+						<file name="bootstrap-table-group-by.min.js" path="webres\Content\bootstrap-table\extensions\group-by\bootstrap-table-group-by.min.js" comment="webres\Content\bootstrap-table\extensions\group-by\bootstrap-table-group-by.min.js"/>
+					</folder>
+					<folder name="key-events" path="webres\Content\bootstrap-table\extensions\key-events" comment="webres\Content\bootstrap-table\extensions\key-events">
+						<file name="bootstrap-table-key-events.js" path="webres\Content\bootstrap-table\extensions\key-events\bootstrap-table-key-events.js" comment="webres\Content\bootstrap-table\extensions\key-events\bootstrap-table-key-events.js"/>
+						<file name="bootstrap-table-key-events.min.js" path="webres\Content\bootstrap-table\extensions\key-events\bootstrap-table-key-events.min.js" comment="webres\Content\bootstrap-table\extensions\key-events\bootstrap-table-key-events.min.js"/>
+					</folder>
+					<folder name="mobile" path="webres\Content\bootstrap-table\extensions\mobile" comment="webres\Content\bootstrap-table\extensions\mobile">
+						<file name="bootstrap-table-mobile.js" path="webres\Content\bootstrap-table\extensions\mobile\bootstrap-table-mobile.js" comment="webres\Content\bootstrap-table\extensions\mobile\bootstrap-table-mobile.js"/>
+						<file name="bootstrap-table-mobile.min.js" path="webres\Content\bootstrap-table\extensions\mobile\bootstrap-table-mobile.min.js" comment="webres\Content\bootstrap-table\extensions\mobile\bootstrap-table-mobile.min.js"/>
+					</folder>
+					<folder name="multiple-search" path="webres\Content\bootstrap-table\extensions\multiple-search" comment="webres\Content\bootstrap-table\extensions\multiple-search">
+						<file name="bootstrap-table-multiple-search.js" path="webres\Content\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.js" comment="webres\Content\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.js"/>
+						<file name="bootstrap-table-multiple-search.min.js" path="webres\Content\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.min.js" comment="webres\Content\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.min.js"/>
+					</folder>
+					<folder name="multiple-sort" path="webres\Content\bootstrap-table\extensions\multiple-sort" comment="webres\Content\bootstrap-table\extensions\multiple-sort">
+						<file name="bootstrap-table-multiple-sort.js" path="webres\Content\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.js" comment="webres\Content\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.js"/>
+						<file name="bootstrap-table-multiple-sort.min.js" path="webres\Content\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.min.js" comment="webres\Content\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.min.js"/>
+					</folder>
+					<folder name="natural-sorting" path="webres\Content\bootstrap-table\extensions\natural-sorting" comment="webres\Content\bootstrap-table\extensions\natural-sorting">
+						<file name="bootstrap-table-natural-sorting.js" path="webres\Content\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.js" comment="webres\Content\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.js"/>
+						<file name="bootstrap-table-natural-sorting.min.js" path="webres\Content\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.min.js" comment="webres\Content\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.min.js"/>
+					</folder>
+					<folder name="reorder-columns" path="webres\Content\bootstrap-table\extensions\reorder-columns" comment="webres\Content\bootstrap-table\extensions\reorder-columns">
+						<file name="bootstrap-table-reorder-columns.js" path="webres\Content\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.js" comment="webres\Content\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.js"/>
+						<file name="bootstrap-table-reorder-columns.min.js" path="webres\Content\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.min.js" comment="webres\Content\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.min.js"/>
+					</folder>
+					<folder name="reorder-rows" path="webres\Content\bootstrap-table\extensions\reorder-rows" comment="webres\Content\bootstrap-table\extensions\reorder-rows">
+						<file name="bootstrap-table-reorder-rows.css" path="webres\Content\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.css" comment="webres\Content\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.css"/>
+						<file name="bootstrap-table-reorder-rows.js" path="webres\Content\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.js" comment="webres\Content\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.js"/>
+						<file name="bootstrap-table-reorder-rows.min.js" path="webres\Content\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.min.js" comment="webres\Content\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.min.js"/>
+					</folder>
+					<folder name="resizable" path="webres\Content\bootstrap-table\extensions\resizable" comment="webres\Content\bootstrap-table\extensions\resizable">
+						<file name="bootstrap-table-resizable.js" path="webres\Content\bootstrap-table\extensions\resizable\bootstrap-table-resizable.js" comment="webres\Content\bootstrap-table\extensions\resizable\bootstrap-table-resizable.js"/>
+						<file name="bootstrap-table-resizable.min.js" path="webres\Content\bootstrap-table\extensions\resizable\bootstrap-table-resizable.min.js" comment="webres\Content\bootstrap-table\extensions\resizable\bootstrap-table-resizable.min.js"/>
+					</folder>
+					<folder name="toolbar" path="webres\Content\bootstrap-table\extensions\toolbar" comment="webres\Content\bootstrap-table\extensions\toolbar">
+						<file name="bootstrap-table-toolbar.js" path="webres\Content\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.js" comment="webres\Content\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.js"/>
+						<file name="bootstrap-table-toolbar.min.js" path="webres\Content\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.min.js" comment="webres\Content\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.min.js"/>
+					</folder>
+				</folder>
+				<folder name="locale" path="webres\Content\bootstrap-table\locale" comment="webres\Content\bootstrap-table\locale">
+					<file name="bootstrap-table-af-ZA.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-af-ZA.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-af-ZA.js"/>
+					<file name="bootstrap-table-af-ZA.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-af-ZA.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-af-ZA.min.js"/>
+					<file name="bootstrap-table-ar-SA.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ar-SA.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ar-SA.js"/>
+					<file name="bootstrap-table-ar-SA.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ar-SA.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ar-SA.min.js"/>
+					<file name="bootstrap-table-ca-ES.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ca-ES.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ca-ES.js"/>
+					<file name="bootstrap-table-ca-ES.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ca-ES.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ca-ES.min.js"/>
+					<file name="bootstrap-table-cs-CZ.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-cs-CZ.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-cs-CZ.js"/>
+					<file name="bootstrap-table-cs-CZ.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-cs-CZ.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-cs-CZ.min.js"/>
+					<file name="bootstrap-table-da-DK.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-da-DK.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-da-DK.js"/>
+					<file name="bootstrap-table-da-DK.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-da-DK.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-da-DK.min.js"/>
+					<file name="bootstrap-table-de-DE.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-de-DE.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-de-DE.js"/>
+					<file name="bootstrap-table-de-DE.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-de-DE.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-de-DE.min.js"/>
+					<file name="bootstrap-table-el-GR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-el-GR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-el-GR.js"/>
+					<file name="bootstrap-table-el-GR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-el-GR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-el-GR.min.js"/>
+					<file name="bootstrap-table-en-US.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-en-US.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-en-US.js"/>
+					<file name="bootstrap-table-en-US.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-en-US.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-en-US.min.js"/>
+					<file name="bootstrap-table-es-AR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-AR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-AR.js"/>
+					<file name="bootstrap-table-es-AR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-AR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-AR.min.js"/>
+					<file name="bootstrap-table-es-CR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-CR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-CR.js"/>
+					<file name="bootstrap-table-es-CR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-CR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-CR.min.js"/>
+					<file name="bootstrap-table-es-ES.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-ES.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-ES.js"/>
+					<file name="bootstrap-table-es-ES.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-ES.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-ES.min.js"/>
+					<file name="bootstrap-table-es-MX.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-MX.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-MX.js"/>
+					<file name="bootstrap-table-es-MX.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-MX.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-MX.min.js"/>
+					<file name="bootstrap-table-es-NI.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-NI.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-NI.js"/>
+					<file name="bootstrap-table-es-NI.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-NI.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-NI.min.js"/>
+					<file name="bootstrap-table-es-SP.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-SP.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-SP.js"/>
+					<file name="bootstrap-table-es-SP.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-es-SP.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-es-SP.min.js"/>
+					<file name="bootstrap-table-et-EE.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-et-EE.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-et-EE.js"/>
+					<file name="bootstrap-table-et-EE.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-et-EE.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-et-EE.min.js"/>
+					<file name="bootstrap-table-fa-IR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-fa-IR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-fa-IR.js"/>
+					<file name="bootstrap-table-fa-IR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-fa-IR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-fa-IR.min.js"/>
+					<file name="bootstrap-table-fr-BE.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-fr-BE.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-fr-BE.js"/>
+					<file name="bootstrap-table-fr-BE.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-fr-BE.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-fr-BE.min.js"/>
+					<file name="bootstrap-table-fr-FR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-fr-FR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-fr-FR.js"/>
+					<file name="bootstrap-table-fr-FR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-fr-FR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-fr-FR.min.js"/>
+					<file name="bootstrap-table-hr-HR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-hr-HR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-hr-HR.js"/>
+					<file name="bootstrap-table-hr-HR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-hr-HR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-hr-HR.min.js"/>
+					<file name="bootstrap-table-hu-HU.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-hu-HU.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-hu-HU.js"/>
+					<file name="bootstrap-table-hu-HU.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-hu-HU.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-hu-HU.min.js"/>
+					<file name="bootstrap-table-it-IT.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-it-IT.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-it-IT.js"/>
+					<file name="bootstrap-table-it-IT.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-it-IT.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-it-IT.min.js"/>
+					<file name="bootstrap-table-ja-JP.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ja-JP.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ja-JP.js"/>
+					<file name="bootstrap-table-ja-JP.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ja-JP.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ja-JP.min.js"/>
+					<file name="bootstrap-table-ka-GE.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ka-GE.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ka-GE.js"/>
+					<file name="bootstrap-table-ka-GE.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ka-GE.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ka-GE.min.js"/>
+					<file name="bootstrap-table-ko-KR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ko-KR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ko-KR.js"/>
+					<file name="bootstrap-table-ko-KR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ko-KR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ko-KR.min.js"/>
+					<file name="bootstrap-table-ms-MY.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ms-MY.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ms-MY.js"/>
+					<file name="bootstrap-table-ms-MY.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ms-MY.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ms-MY.min.js"/>
+					<file name="bootstrap-table-nb-NO.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-nb-NO.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-nb-NO.js"/>
+					<file name="bootstrap-table-nb-NO.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-nb-NO.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-nb-NO.min.js"/>
+					<file name="bootstrap-table-nl-NL.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-nl-NL.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-nl-NL.js"/>
+					<file name="bootstrap-table-nl-NL.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-nl-NL.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-nl-NL.min.js"/>
+					<file name="bootstrap-table-pl-PL.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-pl-PL.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-pl-PL.js"/>
+					<file name="bootstrap-table-pl-PL.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-pl-PL.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-pl-PL.min.js"/>
+					<file name="bootstrap-table-pt-BR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-pt-BR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-pt-BR.js"/>
+					<file name="bootstrap-table-pt-BR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-pt-BR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-pt-BR.min.js"/>
+					<file name="bootstrap-table-pt-PT.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-pt-PT.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-pt-PT.js"/>
+					<file name="bootstrap-table-pt-PT.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-pt-PT.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-pt-PT.min.js"/>
+					<file name="bootstrap-table-ro-RO.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ro-RO.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ro-RO.js"/>
+					<file name="bootstrap-table-ro-RO.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ro-RO.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ro-RO.min.js"/>
+					<file name="bootstrap-table-ru-RU.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ru-RU.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ru-RU.js"/>
+					<file name="bootstrap-table-ru-RU.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ru-RU.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ru-RU.min.js"/>
+					<file name="bootstrap-table-sk-SK.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-sk-SK.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-sk-SK.js"/>
+					<file name="bootstrap-table-sk-SK.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-sk-SK.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-sk-SK.min.js"/>
+					<file name="bootstrap-table-sv-SE.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-sv-SE.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-sv-SE.js"/>
+					<file name="bootstrap-table-sv-SE.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-sv-SE.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-sv-SE.min.js"/>
+					<file name="bootstrap-table-th-TH.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-th-TH.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-th-TH.js"/>
+					<file name="bootstrap-table-th-TH.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-th-TH.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-th-TH.min.js"/>
+					<file name="bootstrap-table-tr-TR.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-tr-TR.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-tr-TR.js"/>
+					<file name="bootstrap-table-tr-TR.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-tr-TR.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-tr-TR.min.js"/>
+					<file name="bootstrap-table-uk-UA.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-uk-UA.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-uk-UA.js"/>
+					<file name="bootstrap-table-uk-UA.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-uk-UA.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-uk-UA.min.js"/>
+					<file name="bootstrap-table-ur-PK.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ur-PK.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ur-PK.js"/>
+					<file name="bootstrap-table-ur-PK.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-ur-PK.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-ur-PK.min.js"/>
+					<file name="bootstrap-table-vi-VN.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-vi-VN.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-vi-VN.js"/>
+					<file name="bootstrap-table-vi-VN.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-vi-VN.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-vi-VN.min.js"/>
+					<file name="bootstrap-table-zh-CN.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-zh-CN.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-zh-CN.js"/>
+					<file name="bootstrap-table-zh-CN.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-zh-CN.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-zh-CN.min.js"/>
+					<file name="bootstrap-table-zh-TW.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-zh-TW.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-zh-TW.js"/>
+					<file name="bootstrap-table-zh-TW.min.js" path="webres\Content\bootstrap-table\locale\bootstrap-table-zh-TW.min.js" comment="webres\Content\bootstrap-table\locale\bootstrap-table-zh-TW.min.js"/>
+				</folder>
+			</folder>
+			<folder name="bootstrap3-editable" path="webres\Content\bootstrap3-editable" comment="webres\Content\bootstrap3-editable">
+				<folder name="css" path="webres\Content\bootstrap3-editable\css" comment="webres\Content\bootstrap3-editable\css">
+					<file name="bootstrap-editable.css" path="webres\Content\bootstrap3-editable\css\bootstrap-editable.css" comment="webres\Content\bootstrap3-editable\css\bootstrap-editable.css"/>
+				</folder>
+				<folder name="img" path="webres\Content\bootstrap3-editable\img" comment="webres\Content\bootstrap3-editable\img">
+					<file name="clear.png" path="webres\Content\bootstrap3-editable\img\clear.png" comment="webres\Content\bootstrap3-editable\img\clear.png"/>
+					<file name="loading.gif" path="webres\Content\bootstrap3-editable\img\loading.gif" comment="webres\Content\bootstrap3-editable\img\loading.gif"/>
+				</folder>
+				<folder name="js" path="webres\Content\bootstrap3-editable\js" comment="webres\Content\bootstrap3-editable\js">
+					<file name="bootstrap-editable.js" path="webres\Content\bootstrap3-editable\js\bootstrap-editable.js" comment="webres\Content\bootstrap3-editable\js\bootstrap-editable.js"/>
+					<file name="bootstrap-editable.min.js" path="webres\Content\bootstrap3-editable\js\bootstrap-editable.min.js" comment="webres\Content\bootstrap3-editable\js\bootstrap-editable.min.js"/>
+				</folder>
+			</folder>
+			<folder name="font-awesome" path="webres\Content\font-awesome" comment="webres\Content\font-awesome">
+				<file name=".gitignore" path="webres\Content\font-awesome\.gitignore" comment="webres\Content\font-awesome\.gitignore"/>
+				<file name=".ruby-version" path="webres\Content\font-awesome\.ruby-version" comment="webres\Content\font-awesome\.ruby-version"/>
+				<file name="composer.json" path="webres\Content\font-awesome\composer.json" comment="webres\Content\font-awesome\composer.json"/>
+				<file name="CONTRIBUTING.md" path="webres\Content\font-awesome\CONTRIBUTING.md" comment="webres\Content\font-awesome\CONTRIBUTING.md"/>
+				<file name="Gemfile" path="webres\Content\font-awesome\Gemfile" comment="webres\Content\font-awesome\Gemfile"/>
+				<file name="Gemfile.lock" path="webres\Content\font-awesome\Gemfile.lock" comment="webres\Content\font-awesome\Gemfile.lock"/>
+				<file name="package.json" path="webres\Content\font-awesome\package.json" comment="webres\Content\font-awesome\package.json"/>
+				<file name="README.md" path="webres\Content\font-awesome\README.md" comment="webres\Content\font-awesome\README.md"/>
+				<file name="_config.yml" path="webres\Content\font-awesome\_config.yml" comment="webres\Content\font-awesome\_config.yml"/>
+				<folder name="css" path="webres\Content\font-awesome\css" comment="webres\Content\font-awesome\css">
+					<file name="font-awesome-ie7.css" path="webres\Content\font-awesome\css\font-awesome-ie7.css" comment="webres\Content\font-awesome\css\font-awesome-ie7.css"/>
+					<file name="font-awesome-ie7.min.css" path="webres\Content\font-awesome\css\font-awesome-ie7.min.css" comment="webres\Content\font-awesome\css\font-awesome-ie7.min.css"/>
+					<file name="font-awesome.css" path="webres\Content\font-awesome\css\font-awesome.css" comment="webres\Content\font-awesome\css\font-awesome.css"/>
+					<file name="font-awesome.min.css" path="webres\Content\font-awesome\css\font-awesome.min.css" comment="webres\Content\font-awesome\css\font-awesome.min.css"/>
+				</folder>
+				<folder name="font" path="webres\Content\font-awesome\font" comment="webres\Content\font-awesome\font">
+					<file name="fontawesome-webfont.eot" path="webres\Content\font-awesome\font\fontawesome-webfont.eot" comment="webres\Content\font-awesome\font\fontawesome-webfont.eot"/>
+					<file name="fontawesome-webfont.svg" path="webres\Content\font-awesome\font\fontawesome-webfont.svg" comment="webres\Content\font-awesome\font\fontawesome-webfont.svg"/>
+					<file name="fontawesome-webfont.ttf" path="webres\Content\font-awesome\font\fontawesome-webfont.ttf" comment="webres\Content\font-awesome\font\fontawesome-webfont.ttf"/>
+					<file name="fontawesome-webfont.woff" path="webres\Content\font-awesome\font\fontawesome-webfont.woff" comment="webres\Content\font-awesome\font\fontawesome-webfont.woff"/>
+					<file name="FontAwesome.otf" path="webres\Content\font-awesome\font\FontAwesome.otf" comment="webres\Content\font-awesome\font\FontAwesome.otf"/>
+				</folder>
+				<folder name="less" path="webres\Content\font-awesome\less" comment="webres\Content\font-awesome\less">
+					<file name="bootstrap.less" path="webres\Content\font-awesome\less\bootstrap.less" comment="webres\Content\font-awesome\less\bootstrap.less"/>
+					<file name="core.less" path="webres\Content\font-awesome\less\core.less" comment="webres\Content\font-awesome\less\core.less"/>
+					<file name="extras.less" path="webres\Content\font-awesome\less\extras.less" comment="webres\Content\font-awesome\less\extras.less"/>
+					<file name="font-awesome-ie7.less" path="webres\Content\font-awesome\less\font-awesome-ie7.less" comment="webres\Content\font-awesome\less\font-awesome-ie7.less"/>
+					<file name="font-awesome.less" path="webres\Content\font-awesome\less\font-awesome.less" comment="webres\Content\font-awesome\less\font-awesome.less"/>
+					<file name="icons.less" path="webres\Content\font-awesome\less\icons.less" comment="webres\Content\font-awesome\less\icons.less"/>
+					<file name="mixins.less" path="webres\Content\font-awesome\less\mixins.less" comment="webres\Content\font-awesome\less\mixins.less"/>
+					<file name="path.less" path="webres\Content\font-awesome\less\path.less" comment="webres\Content\font-awesome\less\path.less"/>
+					<file name="variables.less" path="webres\Content\font-awesome\less\variables.less" comment="webres\Content\font-awesome\less\variables.less"/>
+				</folder>
+				<folder name="scss" path="webres\Content\font-awesome\scss" comment="webres\Content\font-awesome\scss">
+					<file name="font-awesome-ie7.scss" path="webres\Content\font-awesome\scss\font-awesome-ie7.scss" comment="webres\Content\font-awesome\scss\font-awesome-ie7.scss"/>
+					<file name="font-awesome.scss" path="webres\Content\font-awesome\scss\font-awesome.scss" comment="webres\Content\font-awesome\scss\font-awesome.scss"/>
+					<file name="_bootstrap.scss" path="webres\Content\font-awesome\scss\_bootstrap.scss" comment="webres\Content\font-awesome\scss\_bootstrap.scss"/>
+					<file name="_core.scss" path="webres\Content\font-awesome\scss\_core.scss" comment="webres\Content\font-awesome\scss\_core.scss"/>
+					<file name="_extras.scss" path="webres\Content\font-awesome\scss\_extras.scss" comment="webres\Content\font-awesome\scss\_extras.scss"/>
+					<file name="_icons.scss" path="webres\Content\font-awesome\scss\_icons.scss" comment="webres\Content\font-awesome\scss\_icons.scss"/>
+					<file name="_mixins.scss" path="webres\Content\font-awesome\scss\_mixins.scss" comment="webres\Content\font-awesome\scss\_mixins.scss"/>
+					<file name="_path.scss" path="webres\Content\font-awesome\scss\_path.scss" comment="webres\Content\font-awesome\scss\_path.scss"/>
+					<file name="_variables.scss" path="webres\Content\font-awesome\scss\_variables.scss" comment="webres\Content\font-awesome\scss\_variables.scss"/>
+				</folder>
+				<folder name="src" path="webres\Content\font-awesome\src" comment="webres\Content\font-awesome\src">
+					<file name="cheatsheet.html" path="webres\Content\font-awesome\src\cheatsheet.html" comment="webres\Content\font-awesome\src\cheatsheet.html"/>
+					<file name="CNAME" path="webres\Content\font-awesome\src\CNAME" comment="webres\Content\font-awesome\src\CNAME"/>
+					<file name="community.html" path="webres\Content\font-awesome\src\community.html" comment="webres\Content\font-awesome\src\community.html"/>
+					<file name="design.html" path="webres\Content\font-awesome\src\design.html" comment="webres\Content\font-awesome\src\design.html"/>
+					<file name="examples.html" path="webres\Content\font-awesome\src\examples.html" comment="webres\Content\font-awesome\src\examples.html"/>
+					<file name="get-started.html" path="webres\Content\font-awesome\src\get-started.html" comment="webres\Content\font-awesome\src\get-started.html"/>
+					<file name="icons.html" path="webres\Content\font-awesome\src\icons.html" comment="webres\Content\font-awesome\src\icons.html"/>
+					<file name="icons.yml" path="webres\Content\font-awesome\src\icons.yml" comment="webres\Content\font-awesome\src\icons.yml"/>
+					<file name="index.html" path="webres\Content\font-awesome\src\index.html" comment="webres\Content\font-awesome\src\index.html"/>
+					<file name="license.html" path="webres\Content\font-awesome\src\license.html" comment="webres\Content\font-awesome\src\license.html"/>
+					<file name="Makefile" path="webres\Content\font-awesome\src\Makefile" comment="webres\Content\font-awesome\src\Makefile"/>
+					<file name="test.html" path="webres\Content\font-awesome\src\test.html" comment="webres\Content\font-awesome\src\test.html"/>
+					<file name="whats-new.html" path="webres\Content\font-awesome\src\whats-new.html" comment="webres\Content\font-awesome\src\whats-new.html"/>
+					<folder name="assets" path="webres\Content\font-awesome\src\assets" comment="webres\Content\font-awesome\src\assets">
+						<folder name="css" path="webres\Content\font-awesome\src\assets\css" comment="webres\Content\font-awesome\src\assets\css">
+							<file name="prettify.css" path="webres\Content\font-awesome\src\assets\css\prettify.css" comment="webres\Content\font-awesome\src\assets\css\prettify.css"/>
+							<file name="pygments.css" path="webres\Content\font-awesome\src\assets\css\pygments.css" comment="webres\Content\font-awesome\src\assets\css\pygments.css"/>
+						</folder>
+						<folder name="font-awesome" path="webres\Content\font-awesome\src\assets\font-awesome" comment="webres\Content\font-awesome\src\assets\font-awesome">
+							<folder name="font" path="webres\Content\font-awesome\src\assets\font-awesome\font" comment="webres\Content\font-awesome\src\assets\font-awesome\font">
+								<file name="fontawesome-webfont.eot" path="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.eot" comment="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.eot"/>
+								<file name="fontawesome-webfont.svg" path="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.svg" comment="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.svg"/>
+								<file name="fontawesome-webfont.ttf" path="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.ttf" comment="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.ttf"/>
+								<file name="fontawesome-webfont.woff" path="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.woff" comment="webres\Content\font-awesome\src\assets\font-awesome\font\fontawesome-webfont.woff"/>
+								<file name="FontAwesome.otf" path="webres\Content\font-awesome\src\assets\font-awesome\font\FontAwesome.otf" comment="webres\Content\font-awesome\src\assets\font-awesome\font\FontAwesome.otf"/>
+							</folder>
+							<folder name="less" path="webres\Content\font-awesome\src\assets\font-awesome\less" comment="webres\Content\font-awesome\src\assets\font-awesome\less">
+								<file name="bootstrap.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\bootstrap.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\bootstrap.less"/>
+								<file name="core.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\core.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\core.less"/>
+								<file name="extras.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\extras.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\extras.less"/>
+								<file name="font-awesome-ie7.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\font-awesome-ie7.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\font-awesome-ie7.less"/>
+								<file name="font-awesome.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\font-awesome.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\font-awesome.less"/>
+								<file name="icons.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\icons.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\icons.less"/>
+								<file name="mixins.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\mixins.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\mixins.less"/>
+								<file name="path.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\path.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\path.less"/>
+								<file name="variables.less" path="webres\Content\font-awesome\src\assets\font-awesome\less\variables.less" comment="webres\Content\font-awesome\src\assets\font-awesome\less\variables.less"/>
+							</folder>
+							<folder name="scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss">
+								<file name="font-awesome-ie7.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\font-awesome-ie7.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\font-awesome-ie7.scss"/>
+								<file name="font-awesome.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\font-awesome.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\font-awesome.scss"/>
+								<file name="_bootstrap.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_bootstrap.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_bootstrap.scss"/>
+								<file name="_core.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_core.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_core.scss"/>
+								<file name="_extras.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_extras.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_extras.scss"/>
+								<file name="_icons.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_icons.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_icons.scss"/>
+								<file name="_mixins.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_mixins.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_mixins.scss"/>
+								<file name="_path.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_path.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_path.scss"/>
+								<file name="_variables.scss" path="webres\Content\font-awesome\src\assets\font-awesome\scss\_variables.scss" comment="webres\Content\font-awesome\src\assets\font-awesome\scss\_variables.scss"/>
+							</folder>
+						</folder>
+						<folder name="ico" path="webres\Content\font-awesome\src\assets\ico" comment="webres\Content\font-awesome\src\assets\ico">
+							<file name="favicon.ico" path="webres\Content\font-awesome\src\assets\ico\favicon.ico" comment="webres\Content\font-awesome\src\assets\ico\favicon.ico"/>
+						</folder>
+						<folder name="img" path="webres\Content\font-awesome\src\assets\img" comment="webres\Content\font-awesome\src\assets\img">
+							<file name="contribution-sample.png" path="webres\Content\font-awesome\src\assets\img\contribution-sample.png" comment="webres\Content\font-awesome\src\assets\img\contribution-sample.png"/>
+							<file name="fort_awesome.jpg" path="webres\Content\font-awesome\src\assets\img\fort_awesome.jpg" comment="webres\Content\font-awesome\src\assets\img\fort_awesome.jpg"/>
+							<file name="glyphicons-halflings-white.png" path="webres\Content\font-awesome\src\assets\img\glyphicons-halflings-white.png" comment="webres\Content\font-awesome\src\assets\img\glyphicons-halflings-white.png"/>
+							<file name="glyphicons-halflings.png" path="webres\Content\font-awesome\src\assets\img\glyphicons-halflings.png" comment="webres\Content\font-awesome\src\assets\img\glyphicons-halflings.png"/>
+							<file name="icon-flag.pdf" path="webres\Content\font-awesome\src\assets\img\icon-flag.pdf" comment="webres\Content\font-awesome\src\assets\img\icon-flag.pdf"/>
+						</folder>
+						<folder name="js" path="webres\Content\font-awesome\src\assets\js" comment="webres\Content\font-awesome\src\assets\js">
+							<file name="backbone.min.js" path="webres\Content\font-awesome\src\assets\js\backbone.min.js" comment="webres\Content\font-awesome\src\assets\js\backbone.min.js"/>
+							<file name="bootstrap-2.3.1.min.js" path="webres\Content\font-awesome\src\assets\js\bootstrap-2.3.1.min.js" comment="webres\Content\font-awesome\src\assets\js\bootstrap-2.3.1.min.js"/>
+							<file name="bootstrap-222.min.js" path="webres\Content\font-awesome\src\assets\js\bootstrap-222.min.js" comment="webres\Content\font-awesome\src\assets\js\bootstrap-222.min.js"/>
+							<file name="jquery-1.7.1.min.js" path="webres\Content\font-awesome\src\assets\js\jquery-1.7.1.min.js" comment="webres\Content\font-awesome\src\assets\js\jquery-1.7.1.min.js"/>
+							<file name="prettify.min.js" path="webres\Content\font-awesome\src\assets\js\prettify.min.js" comment="webres\Content\font-awesome\src\assets\js\prettify.min.js"/>
+							<file name="site.js" path="webres\Content\font-awesome\src\assets\js\site.js" comment="webres\Content\font-awesome\src\assets\js\site.js"/>
+							<file name="underscore.min.js" path="webres\Content\font-awesome\src\assets\js\underscore.min.js" comment="webres\Content\font-awesome\src\assets\js\underscore.min.js"/>
+							<file name="ZeroClipboard-1.1.7.min.js" path="webres\Content\font-awesome\src\assets\js\ZeroClipboard-1.1.7.min.js" comment="webres\Content\font-awesome\src\assets\js\ZeroClipboard-1.1.7.min.js"/>
+							<file name="ZeroClipboard-1.1.7.swf" path="webres\Content\font-awesome\src\assets\js\ZeroClipboard-1.1.7.swf" comment="webres\Content\font-awesome\src\assets\js\ZeroClipboard-1.1.7.swf"/>
+						</folder>
+						<folder name="less" path="webres\Content\font-awesome\src\assets\less" comment="webres\Content\font-awesome\src\assets\less">
+							<file name="lazy.less" path="webres\Content\font-awesome\src\assets\less\lazy.less" comment="webres\Content\font-awesome\src\assets\less\lazy.less"/>
+							<file name="mixins.less" path="webres\Content\font-awesome\src\assets\less\mixins.less" comment="webres\Content\font-awesome\src\assets\less\mixins.less"/>
+							<file name="responsive-1200px-min.less" path="webres\Content\font-awesome\src\assets\less\responsive-1200px-min.less" comment="webres\Content\font-awesome\src\assets\less\responsive-1200px-min.less"/>
+							<file name="responsive-767px-max.less" path="webres\Content\font-awesome\src\assets\less\responsive-767px-max.less" comment="webres\Content\font-awesome\src\assets\less\responsive-767px-max.less"/>
+							<file name="responsive-768px-979px.less" path="webres\Content\font-awesome\src\assets\less\responsive-768px-979px.less" comment="webres\Content\font-awesome\src\assets\less\responsive-768px-979px.less"/>
+							<file name="responsive-navbar.less" path="webres\Content\font-awesome\src\assets\less\responsive-navbar.less" comment="webres\Content\font-awesome\src\assets\less\responsive-navbar.less"/>
+							<file name="responsive.less" path="webres\Content\font-awesome\src\assets\less\responsive.less" comment="webres\Content\font-awesome\src\assets\less\responsive.less"/>
+							<file name="site.less" path="webres\Content\font-awesome\src\assets\less\site.less" comment="webres\Content\font-awesome\src\assets\less\site.less"/>
+							<file name="sticky-footer.less" path="webres\Content\font-awesome\src\assets\less\sticky-footer.less" comment="webres\Content\font-awesome\src\assets\less\sticky-footer.less"/>
+							<file name="variables.less" path="webres\Content\font-awesome\src\assets\less\variables.less" comment="webres\Content\font-awesome\src\assets\less\variables.less"/>
+							<folder name="bootstrap-2.3.2" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2">
+								<file name="accordion.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\accordion.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\accordion.less"/>
+								<file name="alerts.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\alerts.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\alerts.less"/>
+								<file name="bootstrap.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\bootstrap.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\bootstrap.less"/>
+								<file name="breadcrumbs.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\breadcrumbs.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\breadcrumbs.less"/>
+								<file name="button-groups.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\button-groups.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\button-groups.less"/>
+								<file name="buttons.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\buttons.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\buttons.less"/>
+								<file name="carousel.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\carousel.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\carousel.less"/>
+								<file name="close.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\close.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\close.less"/>
+								<file name="code.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\code.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\code.less"/>
+								<file name="component-animations.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\component-animations.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\component-animations.less"/>
+								<file name="dropdowns.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\dropdowns.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\dropdowns.less"/>
+								<file name="forms.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\forms.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\forms.less"/>
+								<file name="grid.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\grid.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\grid.less"/>
+								<file name="hero-unit.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\hero-unit.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\hero-unit.less"/>
+								<file name="labels-badges.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\labels-badges.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\labels-badges.less"/>
+								<file name="layouts.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\layouts.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\layouts.less"/>
+								<file name="media.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\media.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\media.less"/>
+								<file name="mixins.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\mixins.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\mixins.less"/>
+								<file name="modals.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\modals.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\modals.less"/>
+								<file name="navbar.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\navbar.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\navbar.less"/>
+								<file name="navs.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\navs.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\navs.less"/>
+								<file name="pager.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\pager.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\pager.less"/>
+								<file name="pagination.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\pagination.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\pagination.less"/>
+								<file name="popovers.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\popovers.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\popovers.less"/>
+								<file name="progress-bars.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\progress-bars.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\progress-bars.less"/>
+								<file name="reset.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\reset.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\reset.less"/>
+								<file name="responsive-1200px-min.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-1200px-min.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-1200px-min.less"/>
+								<file name="responsive-767px-max.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-767px-max.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-767px-max.less"/>
+								<file name="responsive-768px-979px.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-768px-979px.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-768px-979px.less"/>
+								<file name="responsive-navbar.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-navbar.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-navbar.less"/>
+								<file name="responsive-utilities.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-utilities.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive-utilities.less"/>
+								<file name="responsive.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\responsive.less"/>
+								<file name="scaffolding.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\scaffolding.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\scaffolding.less"/>
+								<file name="sprites.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\sprites.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\sprites.less"/>
+								<file name="tables.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\tables.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\tables.less"/>
+								<file name="thumbnails.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\thumbnails.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\thumbnails.less"/>
+								<file name="tooltip.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\tooltip.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\tooltip.less"/>
+								<file name="type.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\type.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\type.less"/>
+								<file name="utilities.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\utilities.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\utilities.less"/>
+								<file name="variables.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\variables.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\variables.less"/>
+								<file name="wells.less" path="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\wells.less" comment="webres\Content\font-awesome\src\assets\less\bootstrap-2.3.2\wells.less"/>
+							</folder>
+						</folder>
+					</folder>
+					<folder name="_includes" path="webres\Content\font-awesome\src\_includes" comment="webres\Content\font-awesome\src\_includes">
+						<file name="brand-license.html" path="webres\Content\font-awesome\src\_includes\brand-license.html" comment="webres\Content\font-awesome\src\_includes\brand-license.html"/>
+						<file name="cheatsheet.html" path="webres\Content\font-awesome\src\_includes\cheatsheet.html" comment="webres\Content\font-awesome\src\_includes\cheatsheet.html"/>
+						<file name="community.html" path="webres\Content\font-awesome\src\_includes\community.html" comment="webres\Content\font-awesome\src\_includes\community.html"/>
+						<file name="examples.html" path="webres\Content\font-awesome\src\_includes\examples.html" comment="webres\Content\font-awesome\src\_includes\examples.html"/>
+						<file name="footer.html" path="webres\Content\font-awesome\src\_includes\footer.html" comment="webres\Content\font-awesome\src\_includes\footer.html"/>
+						<file name="get-started.html" path="webres\Content\font-awesome\src\_includes\get-started.html" comment="webres\Content\font-awesome\src\_includes\get-started.html"/>
+						<file name="icons.html" path="webres\Content\font-awesome\src\_includes\icons.html" comment="webres\Content\font-awesome\src\_includes\icons.html"/>
+						<file name="jumbotron-slider.html" path="webres\Content\font-awesome\src\_includes\jumbotron-slider.html" comment="webres\Content\font-awesome\src\_includes\jumbotron-slider.html"/>
+						<file name="jumbotron.html" path="webres\Content\font-awesome\src\_includes\jumbotron.html" comment="webres\Content\font-awesome\src\_includes\jumbotron.html"/>
+						<file name="license-code.less" path="webres\Content\font-awesome\src\_includes\license-code.less" comment="webres\Content\font-awesome\src\_includes\license-code.less"/>
+						<file name="license.html" path="webres\Content\font-awesome\src\_includes\license.html" comment="webres\Content\font-awesome\src\_includes\license.html"/>
+						<file name="navbar.html" path="webres\Content\font-awesome\src\_includes\navbar.html" comment="webres\Content\font-awesome\src\_includes\navbar.html"/>
+						<file name="stripe-ad.html" path="webres\Content\font-awesome\src\_includes\stripe-ad.html" comment="webres\Content\font-awesome\src\_includes\stripe-ad.html"/>
+						<file name="stripe-social.html" path="webres\Content\font-awesome\src\_includes\stripe-social.html" comment="webres\Content\font-awesome\src\_includes\stripe-social.html"/>
+						<file name="tell-me-thanks.html" path="webres\Content\font-awesome\src\_includes\tell-me-thanks.html" comment="webres\Content\font-awesome\src\_includes\tell-me-thanks.html"/>
+						<file name="thanks-to.html" path="webres\Content\font-awesome\src\_includes\thanks-to.html" comment="webres\Content\font-awesome\src\_includes\thanks-to.html"/>
+						<file name="whats-new.html" path="webres\Content\font-awesome\src\_includes\whats-new.html" comment="webres\Content\font-awesome\src\_includes\whats-new.html"/>
+						<file name="why.html" path="webres\Content\font-awesome\src\_includes\why.html" comment="webres\Content\font-awesome\src\_includes\why.html"/>
+						<folder name="ads" path="webres\Content\font-awesome\src\_includes\ads" comment="webres\Content\font-awesome\src\_includes\ads">
+							<file name="carbon-dark-vertical.html" path="webres\Content\font-awesome\src\_includes\ads\carbon-dark-vertical.html" comment="webres\Content\font-awesome\src\_includes\ads\carbon-dark-vertical.html"/>
+							<file name="carbon-light-horizontal.html" path="webres\Content\font-awesome\src\_includes\ads\carbon-light-horizontal.html" comment="webres\Content\font-awesome\src\_includes\ads\carbon-light-horizontal.html"/>
+							<file name="carbon-light-vertical.html" path="webres\Content\font-awesome\src\_includes\ads\carbon-light-vertical.html" comment="webres\Content\font-awesome\src\_includes\ads\carbon-light-vertical.html"/>
+						</folder>
+						<folder name="community" path="webres\Content\font-awesome\src\_includes\community" comment="webres\Content\font-awesome\src\_includes\community">
+							<file name="getting-support.html" path="webres\Content\font-awesome\src\_includes\community\getting-support.html" comment="webres\Content\font-awesome\src\_includes\community\getting-support.html"/>
+							<file name="project-milestones.html" path="webres\Content\font-awesome\src\_includes\community\project-milestones.html" comment="webres\Content\font-awesome\src\_includes\community\project-milestones.html"/>
+							<file name="reporting-bugs.html" path="webres\Content\font-awesome\src\_includes\community\reporting-bugs.html" comment="webres\Content\font-awesome\src\_includes\community\reporting-bugs.html"/>
+							<file name="requesting-new-icons.html" path="webres\Content\font-awesome\src\_includes\community\requesting-new-icons.html" comment="webres\Content\font-awesome\src\_includes\community\requesting-new-icons.html"/>
+							<file name="submitting-pull-requests.html" path="webres\Content\font-awesome\src\_includes\community\submitting-pull-requests.html" comment="webres\Content\font-awesome\src\_includes\community\submitting-pull-requests.html"/>
+						</folder>
+						<folder name="examples" path="webres\Content\font-awesome\src\_includes\examples" comment="webres\Content\font-awesome\src\_includes\examples">
+							<file name="animated-spinner.html" path="webres\Content\font-awesome\src\_includes\examples\animated-spinner.html" comment="webres\Content\font-awesome\src\_includes\examples\animated-spinner.html"/>
+							<file name="bordered-pulled.html" path="webres\Content\font-awesome\src\_includes\examples\bordered-pulled.html" comment="webres\Content\font-awesome\src\_includes\examples\bordered-pulled.html"/>
+							<file name="bulleted-lists.html" path="webres\Content\font-awesome\src\_includes\examples\bulleted-lists.html" comment="webres\Content\font-awesome\src\_includes\examples\bulleted-lists.html"/>
+							<file name="button-dropdowns.html" path="webres\Content\font-awesome\src\_includes\examples\button-dropdowns.html" comment="webres\Content\font-awesome\src\_includes\examples\button-dropdowns.html"/>
+							<file name="button-groups.html" path="webres\Content\font-awesome\src\_includes\examples\button-groups.html" comment="webres\Content\font-awesome\src\_includes\examples\button-groups.html"/>
+							<file name="buttons.html" path="webres\Content\font-awesome\src\_includes\examples\buttons.html" comment="webres\Content\font-awesome\src\_includes\examples\buttons.html"/>
+							<file name="custom.html" path="webres\Content\font-awesome\src\_includes\examples\custom.html" comment="webres\Content\font-awesome\src\_includes\examples\custom.html"/>
+							<file name="form-inputs.html" path="webres\Content\font-awesome\src\_includes\examples\form-inputs.html" comment="webres\Content\font-awesome\src\_includes\examples\form-inputs.html"/>
+							<file name="inline-icons.html" path="webres\Content\font-awesome\src\_includes\examples\inline-icons.html" comment="webres\Content\font-awesome\src\_includes\examples\inline-icons.html"/>
+							<file name="larger-icons.html" path="webres\Content\font-awesome\src\_includes\examples\larger-icons.html" comment="webres\Content\font-awesome\src\_includes\examples\larger-icons.html"/>
+							<file name="navigation.html" path="webres\Content\font-awesome\src\_includes\examples\navigation.html" comment="webres\Content\font-awesome\src\_includes\examples\navigation.html"/>
+							<file name="new.html" path="webres\Content\font-awesome\src\_includes\examples\new.html" comment="webres\Content\font-awesome\src\_includes\examples\new.html"/>
+							<file name="rotated-flipped.html" path="webres\Content\font-awesome\src\_includes\examples\rotated-flipped.html" comment="webres\Content\font-awesome\src\_includes\examples\rotated-flipped.html"/>
+							<file name="stacked.html" path="webres\Content\font-awesome\src\_includes\examples\stacked.html" comment="webres\Content\font-awesome\src\_includes\examples\stacked.html"/>
+						</folder>
+						<folder name="icons" path="webres\Content\font-awesome\src\_includes\icons" comment="webres\Content\font-awesome\src\_includes\icons">
+							<file name="brand.html" path="webres\Content\font-awesome\src\_includes\icons\brand.html" comment="webres\Content\font-awesome\src\_includes\icons\brand.html"/>
+							<file name="currency.html" path="webres\Content\font-awesome\src\_includes\icons\currency.html" comment="webres\Content\font-awesome\src\_includes\icons\currency.html"/>
+							<file name="directional.html" path="webres\Content\font-awesome\src\_includes\icons\directional.html" comment="webres\Content\font-awesome\src\_includes\icons\directional.html"/>
+							<file name="medical.html" path="webres\Content\font-awesome\src\_includes\icons\medical.html" comment="webres\Content\font-awesome\src\_includes\icons\medical.html"/>
+							<file name="new.html" path="webres\Content\font-awesome\src\_includes\icons\new.html" comment="webres\Content\font-awesome\src\_includes\icons\new.html"/>
+							<file name="text-editor.html" path="webres\Content\font-awesome\src\_includes\icons\text-editor.html" comment="webres\Content\font-awesome\src\_includes\icons\text-editor.html"/>
+							<file name="video-player.html" path="webres\Content\font-awesome\src\_includes\icons\video-player.html" comment="webres\Content\font-awesome\src\_includes\icons\video-player.html"/>
+							<file name="web-application.html" path="webres\Content\font-awesome\src\_includes\icons\web-application.html" comment="webres\Content\font-awesome\src\_includes\icons\web-application.html"/>
+						</folder>
+						<folder name="tests" path="webres\Content\font-awesome\src\_includes\tests" comment="webres\Content\font-awesome\src\_includes\tests">
+							<file name="rotated-flipped-inside-anchor.html" path="webres\Content\font-awesome\src\_includes\tests\rotated-flipped-inside-anchor.html" comment="webres\Content\font-awesome\src\_includes\tests\rotated-flipped-inside-anchor.html"/>
+							<file name="rotated-flipped-inside-btn.html" path="webres\Content\font-awesome\src\_includes\tests\rotated-flipped-inside-btn.html" comment="webres\Content\font-awesome\src\_includes\tests\rotated-flipped-inside-btn.html"/>
+							<file name="rotated-flipped.html" path="webres\Content\font-awesome\src\_includes\tests\rotated-flipped.html" comment="webres\Content\font-awesome\src\_includes\tests\rotated-flipped.html"/>
+							<file name="stacked-inside-anchor.html" path="webres\Content\font-awesome\src\_includes\tests\stacked-inside-anchor.html" comment="webres\Content\font-awesome\src\_includes\tests\stacked-inside-anchor.html"/>
+							<file name="stacked.html" path="webres\Content\font-awesome\src\_includes\tests\stacked.html" comment="webres\Content\font-awesome\src\_includes\tests\stacked.html"/>
+						</folder>
+					</folder>
+					<folder name="_layouts" path="webres\Content\font-awesome\src\_layouts" comment="webres\Content\font-awesome\src\_layouts">
+						<file name="base.html" path="webres\Content\font-awesome\src\_layouts\base.html" comment="webres\Content\font-awesome\src\_layouts\base.html"/>
+						<file name="icon.html" path="webres\Content\font-awesome\src\_layouts\icon.html" comment="webres\Content\font-awesome\src\_layouts\icon.html"/>
+					</folder>
+					<folder name="_plugins" path="webres\Content\font-awesome\src\_plugins" comment="webres\Content\font-awesome\src\_plugins">
+						<file name="icon_page_generator.rb" path="webres\Content\font-awesome\src\_plugins\icon_page_generator.rb" comment="webres\Content\font-awesome\src\_plugins\icon_page_generator.rb"/>
+						<file name="site.rb" path="webres\Content\font-awesome\src\_plugins\site.rb" comment="webres\Content\font-awesome\src\_plugins\site.rb"/>
+					</folder>
+				</folder>
+			</folder>
+			<folder name="img" path="webres\Content\img" comment="webres\Content\img">
+				<file name="align_bottom.png" path="webres\Content\img\align_bottom.png" comment="webres\Content\img\align_bottom.png"/>
+				<file name="align_center.png" path="webres\Content\img\align_center.png" comment="webres\Content\img\align_center.png"/>
+				<file name="align_left.png" path="webres\Content\img\align_left.png" comment="webres\Content\img\align_left.png"/>
+				<file name="align_middle.png" path="webres\Content\img\align_middle.png" comment="webres\Content\img\align_middle.png"/>
+				<file name="align_right.png" path="webres\Content\img\align_right.png" comment="webres\Content\img\align_right.png"/>
+				<file name="align_top.png" path="webres\Content\img\align_top.png" comment="webres\Content\img\align_top.png"/>
+				<file name="bold.png" path="webres\Content\img\bold.png" comment="webres\Content\img\bold.png"/>
+				<file name="close2.png" path="webres\Content\img\close2.png" comment="webres\Content\img\close2.png"/>
+				<file name="copy.png" path="webres\Content\img\copy.png" comment="webres\Content\img\copy.png"/>
+				<file name="group.png" path="webres\Content\img\group.png" comment="webres\Content\img\group.png"/>
+				<file name="icon-new-products-16.png" path="webres\Content\img\icon-new-products-16.png" comment="webres\Content\img\icon-new-products-16.png"/>
+				<file name="italic.png" path="webres\Content\img\italic.png" comment="webres\Content\img\italic.png"/>
+				<file name="LayoutBg.jpg" path="webres\Content\img\LayoutBg.jpg" comment="webres\Content\img\LayoutBg.jpg"/>
+				<file name="Layout_ArtLine.jpg" path="webres\Content\img\Layout_ArtLine.jpg" comment="webres\Content\img\Layout_ArtLine.jpg"/>
+				<file name="Layout_Factory.jpg" path="webres\Content\img\Layout_Factory.jpg" comment="webres\Content\img\Layout_Factory.jpg"/>
+				<file name="Layout_Line.jpg" path="webres\Content\img\Layout_Line.jpg" comment="webres\Content\img\Layout_Line.jpg"/>
+				<file name="Layout_Uloc.jpg" path="webres\Content\img\Layout_Uloc.jpg" comment="webres\Content\img\Layout_Uloc.jpg"/>
+				<file name="Layout_Workshop.jpg" path="webres\Content\img\Layout_Workshop.jpg" comment="webres\Content\img\Layout_Workshop.jpg"/>
+				<file name="loading.gif" path="webres\Content\img\loading.gif" comment="webres\Content\img\loading.gif"/>
+				<file name="logo.png" path="webres\Content\img\logo.png" comment="webres\Content\img\logo.png"/>
+				<file name="move.png" path="webres\Content\img\move.png" comment="webres\Content\img\move.png"/>
+				<file name="paintformat.png" path="webres\Content\img\paintformat.png" comment="webres\Content\img\paintformat.png"/>
+				<file name="panel-btn.gif" path="webres\Content\img\panel-btn.gif" comment="webres\Content\img\panel-btn.gif"/>
+				<file name="paste.png" path="webres\Content\img\paste.png" comment="webres\Content\img\paste.png"/>
+				<file name="redo.png" path="webres\Content\img\redo.png" comment="webres\Content\img\redo.png"/>
+				<file name="rotate_anticlockwise.png" path="webres\Content\img\rotate_anticlockwise.png" comment="webres\Content\img\rotate_anticlockwise.png"/>
+				<file name="rotate_clockwise.png" path="webres\Content\img\rotate_clockwise.png" comment="webres\Content\img\rotate_clockwise.png"/>
+				<file name="text_align_center.png" path="webres\Content\img\text_align_center.png" comment="webres\Content\img\text_align_center.png"/>
+				<file name="text_align_justify.png" path="webres\Content\img\text_align_justify.png" comment="webres\Content\img\text_align_justify.png"/>
+				<file name="text_align_left.png" path="webres\Content\img\text_align_left.png" comment="webres\Content\img\text_align_left.png"/>
+				<file name="text_align_right.png" path="webres\Content\img\text_align_right.png" comment="webres\Content\img\text_align_right.png"/>
+				<file name="toback.png" path="webres\Content\img\toback.png" comment="webres\Content\img\toback.png"/>
+				<file name="tofront.png" path="webres\Content\img\tofront.png" comment="webres\Content\img\tofront.png"/>
+				<file name="undo.png" path="webres\Content\img\undo.png" comment="webres\Content\img\undo.png"/>
+				<file name="ungroup.png" path="webres\Content\img\ungroup.png" comment="webres\Content\img\ungroup.png"/>
+			</folder>
+			<folder name="js" path="webres\Content\js" comment="webres\Content\js">
+				<file name="sys.js" path="webres\Content\js\sys.js" comment="webres\Content\js\sys.js"/>
+			</folder>
+			<folder name="sidebar-menu" path="webres\Content\sidebar-menu" comment="webres\Content\sidebar-menu">
+				<file name="sidebar-menu.css" path="webres\Content\sidebar-menu\sidebar-menu.css" comment="webres\Content\sidebar-menu\sidebar-menu.css"/>
+				<file name="sidebar-menu.js" path="webres\Content\sidebar-menu\sidebar-menu.js" comment="webres\Content\sidebar-menu\sidebar-menu.js"/>
+			</folder>
+			<folder name="toastr" path="webres\Content\toastr" comment="webres\Content\toastr">
+				<file name="toastr.css" path="webres\Content\toastr\toastr.css" comment="webres\Content\toastr\toastr.css"/>
+				<file name="toastr.js.map" path="webres\Content\toastr\toastr.js.map" comment="webres\Content\toastr\toastr.js.map"/>
+				<file name="toastr.min.css" path="webres\Content\toastr\toastr.min.css" comment="webres\Content\toastr\toastr.min.css"/>
+				<file name="toastr.min.js" path="webres\Content\toastr\toastr.min.js" comment="webres\Content\toastr\toastr.min.js"/>
+			</folder>
+		</folder>
+	</folder>
+</project>

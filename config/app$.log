@@ -1,0 +1,911 @@
+
+{Line}:#30
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:self(namespace)
+{Name}:'console'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...\aar\lib\wsock\tcp\simpleHttpServer.aardio:595: in function <...\aar\lib\wsock\tcp\simpleHttpServer.aardio:594>	12	
+
+{Line}:#30
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:global(namespace)
+{Name}:'console'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...\aar\lib\wsock\tcp\simpleHttpServer.aardio:595: in function <...\aar\lib\wsock\tcp\simpleHttpServer.aardio:594>	12	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Error}:
+{Line}:#39
+{File}:D:\aar\project\webFrame\res\loader\init.aardio
+{Error}:
+{Expected}:'<eof>'
+{Near}:'}'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	11	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#38
+{Error}:
+{Calling}:'load'
+{Bad argument}:@1
+'
+{Expected}:string
+{Got}:null'
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "if( !request ){..."]:30: in function <[string "if( !request ){..."]:29>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	13	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#26
+{File}:[string "if( !request ){..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "if( !request ){..."]:26: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:27: in main chunk	10	
+
+{Line}:#27
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:27: in main chunk	10	
+
+{Line}:#27
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:27: in main chunk	10	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	D:\aar\project\webFrame\main.aardio:31: in function <D:\aar\project\webFrame\main.aardio:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	D:\aar\project\webFrame\main.aardio:31: in function <D:\aar\project\webFrame\main.aardio:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	D:\aar\project\webFrame\main.aardio:31: in function <D:\aar\project\webFrame\main.aardio:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	D:\aar\project\webFrame\main.aardio:31: in function <D:\aar\project\webFrame\main.aardio:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	D:\aar\project\webFrame\main.aardio:31: in function <D:\aar\project\webFrame\main.aardio:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Util failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	D:\aar\project\webFrame\main.aardio:31: in function <D:\aar\project\webFrame\main.aardio:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Common failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{File}:...ar\project\webFrame\res\loader\init.aardio
+{Line}:#9
+{Error}:import Common failed :
+namespace not found! 
+调用栈
+	[kernel]: in function 'loadcodex'
+	[string "loadcodex("/res/loader/init_mvc.a..."]:31: in function <[string "loadcodex("/res/loader/init_mvc.a..."]:30>
+	[kernel]: in function 'callex'
+	...r\project\webFrame\lib\HttpServer\_.aardio:593: in function <...r\project\webFrame\lib\HttpServer\_.aardio:592>	9	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:[string "loadcodex("/res/loader/init_mvc.a..."]:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	

@@ -1,0 +1,14 @@
+namespace Model.auth{
+    class role{
+    	ctor( /*输入构造函数所需要的参数*/ ){
+    		this=..Model.Conn
+    		this.tablename="role"
+    	};
+    	Field={
+    		Id={Lable="编号";Attr="INT PRIMARY KEY AUTO_INCREMENT"};
+    		Name={Label="名称";Attr="VARCHAR(255)"};
+    	}
+    }
+    namespace role{
+    }
+}

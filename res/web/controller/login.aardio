@@ -1,0 +1,37 @@
+namespace Controller.web{
+	class login{
+    	ctor(...){
+        	this=..Controller(...)
+        	}
+        index=function(...){
+            return this.Page("web.login.index")
+        }
+        login=function(...){
+        	var name,password=..request.post["name"],..request.post["password"]
+        	var u=self.login(name,password)
+        	
+        	if(u){
+        		..session["user"]=u	
+        		var rs=..Model("auth.userRole").GetByUserid(u["Id"])
+        		var ps=..Model("auth.rolePermission").GetByRoleid(rs)
+        		this.Redirct("web.home","index",ps)
+        	}else{
+        		return this.Page("web.login.index","账号密码错误")
+        	}
+        }
+        logout=function(...){
+        	self.logout()
+        	return this.Page("web.login.index")
+        }
+	}
+	namespace login{
+		login=function(name,password){
+				var m=..Model("auth.user")
+				return m.CheckLogin(name++"",password++"")
+			}
+		logout=function(){
+			..session["user"]=null
+			..session.clear()
+			}
+	}
+}

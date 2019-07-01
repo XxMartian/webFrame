@@ -1,0 +1,21 @@
+﻿import string
+import table
+namespace View{
+    Page=function(tpl,data){
+        var tplPath=tpl
+        if(!..string.endWith(tpl,".aardio",true)){	
+            var pattern =  "!\w([a-zA-Z]\w*)"
+            var tview={}
+			for s in ..string.gmatch( tpl, pattern ){
+				..table.push(tview,s)
+			}
+			var path="/res/"+tview[1]+"/view"
+			for(i=2;#tview;1){
+				path+=("/"+tview[i])
+			}
+			path+=".aardio"
+			tplPath=path
+        }
+        return ..response.loadcode(tplPath,data)
+    }
+}

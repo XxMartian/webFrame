@@ -1,0 +1,30 @@
+namespace Controller.test{
+	class test{
+    	ctor(...){
+        	this=..Controller(...)
+        	}
+        index=function(){
+            return this.Page("test.index",{aaa=123;bbb={bbb=132;ccc=456}})
+        }
+        test=function(){
+            return this.Page("test.test")
+        }
+        testdb=function(){
+            var m=..Model("test.testmod")
+            ..Model("auth.role")
+            ..Model("auth.user")
+            var a=m.listTables()
+            var tb={}
+           	for v in a.each(){
+            	..table.push(tb,v)    
+            }
+            return this.Page("test.testdb",tb)
+            
+        }
+        down=function(){
+        	this.Download("/res/error.aardio")
+        }
+	}
+	namespace test{
+	}
+}

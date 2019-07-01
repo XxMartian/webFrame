@@ -1,0 +1,5 @@
+<? View.Page("web.common.header",...)?>
+<script>
+console.log(<? ={...}?>)
+</script>
+<? View.Page("web.common.footer",...)?>

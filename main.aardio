@@ -1,0 +1,35 @@
+loadcodex("/res/loader/init_mvc.aardio")
+if( !request ){
+	import fsys.log;
+	import HttpServer;
+	import process;
+	import console;
+	import config
+	/*捕获错误信息{{*/
+	global.onError = function( err,over,app ){ 
+    	if(!over){
+        	import debug;
+        	var stack = debug.traceback(,"调用栈",3);
+        	err =  ..string.concat(err,'\n',stack);
+    	}
+    	
+    	if(!app){
+    		//CGI进程错误信息请查看"CGI.EXE目录/config"下面生成的日志文件
+    		import fsys.log;
+    		fsys.log.print( ..string.replace(err,"![\r\n]\n",'\r\n')  );
+    	}
+    	
+    	//500错误错误服务器上本地打开网页可以看到,
+    	return err;
+	} 
+	/*}}*/ 
+	var server = HttpServer("0.0.0.0",config.site.port:8081);
+	console.setTitle(server.getUrl() ); 
+	process.execute("chrome",server.getUrl()+"?ctl=web.login&act=index"  )
+	server.run(
+		function(response,request,session){
+			loadcodex("/res/loader/init.aardio")
+		} 	
+	);
+	return;
+}

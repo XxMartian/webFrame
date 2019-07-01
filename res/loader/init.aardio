@@ -1,0 +1,40 @@
+import Router
+import View
+import Controller
+import Model
+import string
+import Router.MIME
+import io
+import console
+import Common
+var _,ctl,act,url=Router.parseUrl(request.uri)
+if(ctl&&act){//加载控制器及函数
+    import Controller
+	import View
+	import string
+	try{
+    	var C
+   		C=Controller.Ctl(ctl)
+   		response.write(C[act]())
+	}catch(e){
+		return View.Page("/res/error.aardio",e)
+	}
+}elseif(string.startWith(url,"/download")){//下载
+	var path=url
+	import fsys.file
+	var file=fsys.file(path,"r+")
+	if(file){
+		response.contentType =Router.MIME.Type[io.splitpath(request.uri).ext]:Router.MIME.Type[".*"];
+		while(var data;data = file.read(2048);data != null){
+			response.write(data)
+		}
+		file.close()
+	}else{
+		response.status=404
+		response.write(404)	
+	}
+}else{////静态资源
+	var path="/webres"++url
+	response.contentType =Router.MIME.Type[io.splitpath(path).ext]:Router.MIME.Type[".*"];
+    response.write(string.load(path))
+}

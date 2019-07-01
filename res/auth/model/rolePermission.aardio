@@ -1,0 +1,21 @@
+namespace Model.auth{
+    class rolePermission{
+    	ctor( /*输入构造函数所需要的参数*/ ){
+    		this=..Model.Conn
+    		this.tablename="role_permission"
+    	};
+    	/* SQL {{ */
+    	SQL_GET_BY_ROLES=`select * from (SELECT PermissionId FROM `++this.tablename++` WHERE RoleId in (@roleid) group by PermissionId ) a left join permission on permission.Id=a.PermissionId`;
+    	/*}}*/
+    	Field={
+    		PermissionId={Label="用户";Attr="INT"};
+    		RoleId={label="角色";Attr="INT"};
+    	}
+    	GetByRoleid=function(roleid){
+    		var sql=..string.replace(this.SQL_GET_BY_ROLES,"\@roleid",..Common.unpack(roleid,",","RoleId"))
+    		return ..Common.getTable(this.query(sql))
+    	}
+    }
+    namespace rolePermission{
+    }
+}

@@ -1,0 +1,68 @@
+﻿import Router
+import View
+import table
+import string.md5
+import Router.MIME
+import fsys.file
+import io
+import config
+class Controller{
+    ctor(){
+        this.response=..response
+        this.request=..request
+        this.session=..session
+        this.pars=(..Router.parseUrl(this.request.uri))["pars"]
+        }
+    Write=function(...){
+        this.response.write(...)
+        }
+   	Redirct=function(ctl,act,...){
+   		 return self.Ctl(ctl)[act](...)
+   		}
+    Page=function(tpl,...){
+        return ..View.Page(tpl,...)
+        }
+    Download=function(path,size=2048){
+       	this.response.contentType =..Router.MIME.Type[".*"];
+		if(..io.exist(path,4)){
+			var file=..fsys.file(path,"r+")
+			while(var data;data = file.read(size);data != null){
+				this.Write(data)
+			}
+		}
+       }
+   }
+namespace Controller{
+    Ctl=function(ctl){
+        var tab={}
+        var path=""
+        var C
+		if(ctl){
+			var par="!\w([a-zA-Z]\w*)"
+			for word in ..string.gmatch(ctl,par) { 
+    			..table.push(tab,word)
+			}
+		}
+		if(#tab>0){
+			path="/res/"++tab[1]++"/controller"
+			for(i=2;#tab;1){
+				path+=("/"+tab[i])
+			}
+			path+=".aardio"
+		}
+		try{
+			if(!..Router["controller"++..string.md5(ctl)]){
+				loadcodex(path)
+				..Router["controller"++..string.md5(ctl)]=true//控制器缓存
+			}
+			C=eval("Controller."++ctl++"()")
+			
+		}catch(e){
+			error(e)
+		}
+		return C
+       }
+}
+/**intellisense(Controller)
+Controller = 控制器
+end intellisense**/
