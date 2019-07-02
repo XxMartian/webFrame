@@ -1,134 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?=..config.site.title?></title>
-    <link href="Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="Content/sidebar-menu/sidebar-menu.css" rel="stylesheet" />
-    <link href="Content/ace/css/ace-rtl.min.css" rel="stylesheet" />
-    <link href="Content/ace/css/ace-skins.min.css" rel="stylesheet" />
-    <link href="Content/toastr/toastr.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap/css/bootstrap-tab.css" rel="stylesheet"/>
-    <script src="Content/js/sys.js"></script>
-    <script src="Content/jquery-1.9.1.min.js"></script>
-    <script src="Content/bootstrap/js/bootstrap.min.js"></script>
-    <script src="Content/sidebar-menu/sidebar-menu.js"></script>
-    <script src="Content/bootstrap/js/bootstrap-tab.js"></script>
-
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <title>WinAdmin - Win10风格管理系统</title>
+    <link href="./lib/layui/css/layui.css" rel="stylesheet" />
+    <link href="./lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="./lib/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link href="./lib/winui/css/winui.css" rel="stylesheet" />
+    <script>
+        /^http(s*):\/\//.test(location.href) || alert('请先部署到 localhost 下再访问');
+        console.log(<?=...?>)
+    </script>
+    <style>
+        body {
+            /*在页面顶部加载背景最佳，如有必要这块可以从数据库读取*/
+            background-image: url(images/bg_01.jpg);
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar navbar-default" id="navbar">
-        <div class="navbar-container" id="navbar-container">
-            <div class="navbar-header pull-left">
-                <a href="#" class="navbar-brand">
-                    <small>
-                        <i class="icon-leaf"></i>
-                        <?=..config.site.title?>
-                    </small>
-                </a>
-            </div>
+    <!-- 桌面 -->
+    <div class="winui-desktop">
 
-            <div class="navbar-header pull-right" role="navigation">
-                <ul class="nav ace-nav">
-                    
-                       <li class="light-blue" style="height:50px;margin-right:-20px;">
-                          
-                           <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                               <img class="nav-user-photo" src="Content/ace/avatars/avatar2.png" alt="Admin's Photo" />
-                               <span class="user-info">
-                                   <small>欢迎光临,</small>
-                                   1310177
-                               </span>
-       
-                               <i class="icon-caret-down"></i>
-                           </a>
-                           <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                               <li>
-                                   <a href="#">
-                                       <i class="icon-cog"></i>
-                                       设置
-                                   </a>
-                               </li>
-                               <li>
-                                   <a href="#">
-                                       <i class="icon-user"></i>
-                                       个人资料
-                                   </a>
-                               </li>
-                               <li class="divider"></li>
-                               <li>
-                                   <a href="javascript:url('web.home','index')">
-                                       <i class="icon-off"></i>
-                                       退出
-                                   </a>
-                               </li>
-                           </ul>
-                       </li>
-                   </ul>
-            </div>
-		
-        </div>
-	    
     </div>
-    <div class="main-container" id="main-container">
-        <div class="main-container-inner">
-            <a class="menu-toggler" id="menu-toggler" href="#">
-                <span class="menu-text"></span>
-            </a>
-            <div class="sidebar" id="sidebar">
-                <ul class="nav nav-list" id="menu"></ul>
-                <div class="sidebar-collapse" id="sidebar-collapse">
-                    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
-                </div>
+
+    <!-- 开始菜单 -->
+    <div class="winui-start sp layui-hide">
+        <!-- 左边设置 -->
+        <div class="winui-start-left">
+            <div class="winui-start-item bottom" data-text="个人中心"><i class="fa fa-user"></i></div>
+            <div class="winui-start-item winui-start-individuation bottom" data-text="主题设置"><i class="fa fa-cog"></i></div>
+            <div class="winui-start-item bottom logout" data-text="注销登录"><i class="fa fa-power-off"></i></div>
+        </div>
+        <!-- 中间导航 -->
+        <div class="winui-start-center">
+            <div class="layui-side-scroll">
+                <ul class="winui-menu layui-nav layui-nav-tree" lay-filter="winuimenu"></ul>
             </div>
-            <div class="main-content">
-                <div class="page-content">
-                    <div class="row" style="margin-right:-20px;margin-left:-20px;">
-                        <div class="col-xs-12" style="padding-left:0px;padding-right:0px;">
-                            <ul class="nav-my-tab">
-                                <li class="leftbackward"><a href="#" >
-                                    <i class="icon-backward"></i></a>
-                                </li>
-                                <li class="middletab">
-                                    <ul class="nav nav-tabs" role="tablist">
-                                        <li class="active"><a href="#Index" role="tab" data-toggle="tab">
-                                            <i class="icon-home"></i>系统首页</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="rightforward"><a href="#">
-                                        <i class="icon-forward"></i></a>
-                                 </li>
-                            </ul>
-                            
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="Index" style="height:100%">
-					<h2>欢迎进入后台管理系统</h2>
-                                </div>
+        </div>
+        <!-- 右边磁贴 -->
+        <div class="winui-start-right">
+            <div class="layui-side-scroll">
+                <div class="winui-nav-tile">
+                    <div class="winui-tilebox">
+                        <div class="winui-tilebox-head">组件示例</div>
+                        <div class="winui-tilebox-body">
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-fw fa-adjust"></i>
+                                <span>按钮</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-fw fa-circle-o-notch"></i>
+                                <span>进度条</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-fw fa-list-alt"></i>
+                                <span>表单</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-fw fa-window-maximize"></i>
+                                <span>面板</span>
+                            </div>
+                            <div class="winui-tile winui-tile-long">
+                                <p style="font-size:30px;font-family:'STKaiti';">Tab</p>
+                                <span>选项卡</span>
+                            </div>
+                            <div class="winui-tile winui-tile-long">
+                                <i class="fa fa-fw fa-spin fa-spinner"></i>
+                                <span>流加载</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-fw fa-spin fa-refresh"></i>
+                                <span>动画</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-fw fa-calendar"></i>
+                                <span>日期时间</span>
+                            </div>
+                            <div class="winui-tile winui-tile-long">
+                                <i class="fa fa-fw fa-clock-o"></i>
+                                <span>时间线</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winui-tilebox">
+                        <div class="winui-tilebox-head">占位菜单</div>
+                        <div class="winui-tilebox-body">
+                            <div class="winui-tile winui-tile-long">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <img src="images/logo_100.png" />
+                                <span>自定义图片</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <img src="images/qzone_32.png" />
+                                <span>QQ空间</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-photo fa-fw"></i>
+                                <span>图片</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winui-tilebox">
+                        <div class="winui-tilebox-head">占位菜单</div>
+                        <div class="winui-tilebox-body">
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
+                            </div>
+                            <div class="winui-tile winui-tile-normal">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winui-tilebox">
+                        <div class="winui-tilebox-head">占位菜单</div>
+                        <div class="winui-tilebox-body">
+                            <div class="winui-tile winui-tile-long">
+                                <i class="fa fa-file-text"></i>
+                                <span>文章管理</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </div>
-        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-            <i class="icon-double-angle-up icon-only bigger-110"></i>
-        </a>
     </div>
-    <script type="text/javascript">
-        //toastr.options.positionClass = 'toast-bottom-right';
-        console.log(<?= ...?>)
-        $(function () {
-            $('#menu').sidebarMenu({
-                data: <?= ...?>
-            });
-        });
+
+    <!-- 任务栏 -->
+    <div class="winui-taskbar">
+        <!-- 开始菜单触发按钮 -->
+        <div class="winui-taskbar-start sp"><i class="fa fa-windows"></i></div>
+        <!-- 任务项 -->
+        <ul class="winui-taskbar-task"></ul>
+        <!-- 任务栏时间 -->
+        <div class="winui-taskbar-time"></div>
+        <!-- 控制中心 -->
+        <div class="winui-taskbar-console sp">
+            <i class="fa fa-comment-o"></i>
+        </div>
+        <!-- 显示桌面 -->
+        <div class="winui-taskbar-desktop">
+        </div>
+    </div>
+
+    <!--控制中心-->
+    <div class="winui-console layui-hide slideOutRight sp">
+        <h1>最新通知</h1>
+        <div class="winui-message">
+            <div class="layui-side-scroll">
+                <div class="winui-message-item">
+                    <h2>马云发来一条信息</h2>
+                    <div class="content">
+                        今天晚上我请客！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="winui-shortcut">
+            <h2><span class="extend-switch sp">展开</span></h2>
+            <div class="winui-shortcut-item">
+                <i class="fa fa-cog"></i>
+                <span>设置</span>
+            </div>
+        </div>
+    </div>
+
+    <!--layui.js-->
+    <script src="./lib/layui/layui.js"></script>
+    <script>
+        layui.config({
+            base: './js/' //指定 index.js 路径
+            , version: '1.0.0-beta'
+        }).use('index');
     </script>
-    <script src="Content/ace/js/ace-extra.min.js"></script>
-    <script src="Content/ace/js/ace.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+import console; 
+import table
+import Common
+getTree=function(arr,idKey,pidKey,childKey,pid){
+    var idx={}
+    for(i=#arr-1;1;1){
+    	
+    }
+    
+    }
+var t={
+		{
+			name="name1";
+			id=0;
+		};
+		{
+			name="name2";
+			id=1;
+		};
+		{
+			name="name1_1";
+			id=2;
+			pid=0;
+		};
+		{
+			name="name1_2";
+			id=3;
+			pid=0;
+		};
+		{
+			name="name3_1";
+			id=5;
+			pid=3;
+		};
+		{
+			name="name4_10";
+			id=4;
+		}
+}
+
+console.dumpJson(Common.getTree2(t,"id","pid","children",null))
+console.log(c)
+console.pause(true);

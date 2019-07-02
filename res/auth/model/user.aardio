@@ -10,7 +10,7 @@ namespace Model.auth{
     	Field={
     		Id={Lable="编号";Attr="INT PRIMARY KEY AUTO_INCREMENT"};
     		Name={Label="用户名";Attr="VARCHAR(255)"};
-    		Password={label="密码";Attr="VARCHAR(255)"};
+    		Password={label="密码";Attr="VARCHAR(255)";Json="-"};
     		Nickname={Label="昵称";}
     	}
     	CheckLogin=function(name,password){

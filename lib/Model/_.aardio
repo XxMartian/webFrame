@@ -29,6 +29,20 @@ class Model{
 		}
 		SQL_CREATE_TABLE()
 	}
+	Conv=function(arr,key="Json"){
+		var ret={}
+		for(i=1;#arr;1){
+			var a=arr[i]
+			var rettmp={}
+			for(k,v in this.Field){
+				if(v[key]){
+					rettmp[v[key]]=a[k]:(v["Default"]:"")
+				}
+			}
+			..table.push(ret,rettmp)
+		}
+		return ret;
+	}
 	/*
 	    	Field={
     		Id={Label="编号";Attr=""};

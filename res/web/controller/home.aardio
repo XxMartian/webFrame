@@ -5,18 +5,7 @@ namespace Controller.web{
         	}
         index=function(...){
             if(..session["user"]){
-            return this.Page("web.home.index",...);/*{{
-                    id='1';
-                    text= '系统设置';
-                    icon= 'icon-cog';
-                    url= '';
-                    menus= {{
-                        id= '11';
-                        text= '编码管理';
-                        icon= 'icon-glass';
-                        url= 'C:/Users/yangxiaojun/Desktop/bootstrap-ace_sample/code1.html'
-                    }}
-              }})*/
+            	return this.Page("web.home.index",...);
             }else{
              	return this.Redirct("web.login","index")   
              }

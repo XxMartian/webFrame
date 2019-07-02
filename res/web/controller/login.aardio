@@ -14,7 +14,7 @@ namespace Controller.web{
         		..session["user"]=u	
         		var rs=..Model("auth.userRole").GetByUserid(u["Id"])
         		var ps=..Model("auth.rolePermission").GetByRoleid(rs)
-        		this.Redirct("web.home","index",ps)
+        		this.Redirct("web.home","index",..Model("auth.permission").Conv(ps,"Label"))
         	}else{
         		return this.Page("web.login.index","账号密码错误")
         	}

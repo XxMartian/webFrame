@@ -909,3 +909,25 @@ namespace not found!
 {Type}:null
 调用栈
 	[string "loadcodex("/res/loader/init_mvc.a..."]:27: in main chunk	10	
+
+{Line}:#27
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:27: in main chunk	10	
+
+{Line}:#27
+{File}:D:\aar\project\webFrame\main.aardio:
+----------------------
+ 
+{Attempt to}: _get table 
+{Kind}:variable(local)
+{Name}:'server'
+{Type}:null
+调用栈
+	D:\aar\project\webFrame\main.aardio:27: in main chunk	10	

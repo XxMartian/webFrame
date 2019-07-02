@@ -5,14 +5,14 @@ namespace Model.auth{
     		this.tablename="permission"
     	};
     	Field={
-    		Id={Lable="编号";Attr="INT PRIMARY KEY AUTO_INCREMENT"};
-    		Name={Label="名称";Attr="VARCHAR(255)"};
-    		Type={Label="类型(json/ui/)";Attr="VARCHAR(255)"};
-    		Ctl={Label="控制器";};
-    		Act={Label="函数"};
-    		Class={Label="css类型"};
-    		Icon={Label="图标"};
-    		ParentId={Label="父级别"}
+    		Id={Label="编号";Attr="INT PRIMARY KEY AUTO_INCREMENT";};
+    		Name={Label="名称";Attr="VARCHAR(255)";Default="Default"};
+    		Type={Label="类型(json/ui/)";Attr="VARCHAR(255)";Default="json"};
+    		Ctl={Label="控制器";Default="web.home"};
+    		Act={Label="函数";Default="index"};
+    		Class={Label="css类型";Default="css"};
+    		Icon={Label="图标";Default=""};
+    		ParentId={Label="父级别";Default=-1}
     	}
     }
     namespace permission{

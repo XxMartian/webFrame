@@ -29,3 +29,29 @@ getTable = function(result){//执行SQL,返回table记录集
 		if( type(t) != type.table ) t = null;
 		return t,err;
 	}
+getTree=function(arr,idKey,pidKey,childKey,pid){
+    var ret={}
+    for(i=1;#arr;1){
+    	var a=arr[i]
+    	if(a[pidKey]==pid){
+    		a[childKey]=getTree(arr,idKey,pidKey,childKey,a[idKey])
+    		if(#a[childKey]==0) a[childKey]=null
+    		..table.push(ret,a)
+    	}
+    }
+    return ret 
+}
+getTree2=function(arr,idKey="",pidKey,childKey,pid){
+    var ret={}
+    var b=..table.clone(arr)
+    for(i=1;#arr;1){
+    	var a=arr[i]
+    	if(a[pidKey]==pid){
+    		..table.remove(b,i-(#arr-#b))
+    		a[childKey]=getTree2(b,idKey,pidKey,childKey,a[idKey])
+    		if(#a[childKey]==0) a[childKey]=null
+    		..table.push(ret,a)
+    	}
+    }
+    return ret 
+}
